@@ -31,7 +31,8 @@
             </div>
             <div class="gh-header-right">
                 {{#if @custom.show_featured_posts}}
-                    {{> "components/subscribe-sidebar"}}
+                    {{> "components/ad-sidebar"}}
+                    {{> "components/tags-sidebar"}}
                 {{else}}
                     <div class="gh-featured-feed">
                         {{#foreach posts from="5" limit="6"}}
